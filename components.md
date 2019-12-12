@@ -122,15 +122,15 @@ Here you'll find listed all the components relevant to the development to be don
         Description: User clicks "Next Suggestion" (New Votes Page -> Suggestion Navigation Buttons -> Next Suggestion)
         States:
           - State: All CNS_Topics
-            - Feedback: Page shows the next suggestion according to the 'Most Agreed Upon' algorithm. If current shown suggestion is the last suggestion in this sorting then the user is transferred to draft page
+            - Feedback: Page shows the next suggestion according to the 'Most Agreed Upon' algorithm. If current shown suggestion is the last suggestion in this sorting then the user is transferred to the Summary page
             - Sort: Most Agreed Upon
           - State: Specific CNS_Topic
             - Feedback: Page shows the next suggestion according to the 'Sort by CNS_Topic' algorithm. If current shown suggestion is the last suggestion in this CNS_Topic then the next CNS_Topic is shown. If the current shown suggestion is the last suggestion in this CNS_Topic and the CNS_Topic is the last topic in the document than the user is transferred to the Summary page.
             - Sort: Sort by CNS_Topic
           - State: End of New Suggestions
-            - Description: User reach the end of new suggestions page view and navigates to draft page.
-            - To: Draft Page
-            - Feedback: Page view shifts to Draft Page
+            - Description: User reach the end of new suggestions page view and navigates to Summary page.
+            - To: Summary Page
+            - Feedback: Page view shifts to Summary Page
     - Name: Previous Suggestion
       - Type: Clickable
       - Action:
