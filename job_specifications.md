@@ -234,6 +234,4 @@ Please make sure to make commits regularly and push them to the repository for r
 
 Issues
 ---
-- Where does the user redirects after voting on all issues?  consenz_user_flow_specification.yaml Pages.newVotesPage.goal says draft page, but Pages.newVotesPage.modes says summary page.
-- In Specific CNS_Topic mode there are actually two sort algorithms. First sort by CNS_Topic, but then also sort by most agreed upon relative to each CNS_Topic.
 - Is there a suggestion draft page? What is Aharon's third New Votes Page mock up for?

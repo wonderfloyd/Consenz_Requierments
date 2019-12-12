@@ -1,0 +1,90 @@
+# <a id="top"></a> Data Model
+This is the Applications Data Model. It consist of four objects:  
+- [User](#user)
+- [Document](#document)
+- [Section](#section)
+- [Argument](#argument)
+
+### <a id="user"></a>User:
+- displayName: String
+- created_at: Date
+- documents:
+  - ref: Document
+- notifications:
+  - isOn: Boolean
+  - mailAddress: String
+- photoURL: String
+### <a id="document"></a>Document:
+- about: String
+- conditionalSupport: Boolean
+- cons:
+  - ref: Argument
+- pros:
+  - ref: Argument
+- consensus_meter: String
+- consensuses:
+  - Number
+- createdAt: Date
+- divisionOfTopics: Boolean
+- documentCNS_Topics:
+  - String
+- editors:
+  - ref: User
+- sendNotifications: Boolean
+- threshold: Number
+- timer: Number
+- title: String
+- updated_at: Date
+- updated_by:
+  - ref: User
+- voteOnDocument: Boolean
+### <a id="section"></a>Section:
+- CNS_Topic: String
+- content: String
+- created_by:
+  - ref: User
+- owner:
+  - ref: User
+- updated_by:
+  - ref: User
+- documentId:
+  - ref: Document
+- parentSectionId:
+  - ref: Section
+- accepted_at: Date
+- created_at: Date
+- deadline: Date
+- updated_at: Date
+- cons:
+  - ref: Argument
+- pros:
+  - ref: Argument
+- contentHtml: String
+- deleted:
+- edited:
+- status: Number
+- threshold: Number
+- timer: Number
+- tag: String
+- toDelete:
+- toEdit:
+  - type: List
+  - item:
+  - description:
+### <a id="argument"></a>Argument:
+- content: String
+  - convinced:
+    - ref: User
+  - created_at: Date
+  - created_by:
+    - ref: User
+  - documentId:
+    - ref: Document
+  - owner:
+    - ref: User
+  - sectionId:
+    - ref: Section
+  - type: Boolean
+  - updated_at: Date
+  - updated_by:
+    - ref: User

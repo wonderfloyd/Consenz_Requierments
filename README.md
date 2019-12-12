@@ -4,9 +4,8 @@ This repository contains all the information neccesary for developing new page v
 You should get an invitation for a private repository conaining the app's source code. You can head over to the job specs md file found [here](./job_specifications.md), clone the source code repo and start working.  
 
 
-[Data_Model.md]() - Add file that contains the data mdoel details.  
-[Logics.md]() - Add file that contains all the algorithms details.  
-[Components.md]() - Add file that contains all the details about different components of the app. (Items and Topics)    
-[FlowBiz.md]() - Add file that contains the FlowBiz terminoligy and definitions.  
+[Data Model](./data_model.md)  
+[Logics]() - Add file that contains all the algorithms details.  
+[Components.md]() - Add file that contains all the details about different components of the app. (Items and Topics)
 
 Happy coding!   
