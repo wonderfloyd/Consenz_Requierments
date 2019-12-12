@@ -178,7 +178,7 @@ __Mock Up 2 for New Suggestion__:
 
 __Mock up 1 for Editing Suggestion__:  
 
-![new_section_vote_mockup1](https://user-images.githubusercontent.com/42510547/70627782-7fb79600-1c2f-11ea-9978-fcd1a7963d15.png)
+![edit_section_vote_mockup1](https://user-images.githubusercontent.com/42510547/70627782-7fb79600-1c2f-11ea-9978-fcd1a7963d15.png)
 
 __Mock Up 2 for Editing Suggestion__:  
 
