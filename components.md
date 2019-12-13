@@ -142,7 +142,7 @@ Here you'll find listed all the components relevant to the development to be don
           - State: Specific CNS_Topic
             - Feedback: Page shows the previous suggestion according to the 'Sort by CNS_Topic' algorithm. If current shown suggestion is the first suggestion in this CNS_Topic then the last suggestion in the previous CNS_Topic is shown. If the current shown suggestion is the first suggestion in this CNS_Topic and the CNS_Topic is the first topic in the document than this clickable should not be active (greyed out)
             - Sort: Sort by CNS_Topic
-- __User Menu__<a id="user-menu"></a>
+- <a id="user-menu">__User Menu__</a>
   - Type: Navigation
   - Items:
     - Sign Out
