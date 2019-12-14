@@ -43,12 +43,8 @@ Explain the document issues and encourage her to sign up and participate.
 #### 2.1.1. Specification
 ##### 2.1.1.2. __Page Topics__
 - Welcome Text - Static text, Edited by Admin user, represents overview. May include discussion preview
-- Proceed to choose Topic
-  - type: Clickable (Button, Link, ect.)
-  - action:  
-    - to: [Choose Topics Page View](#choose-topics-page-view)
-    - trigger: The user clicks on this element
-    - feedback: Page view shifts to Choose Topics Page View
+- Proceed to choose Topic Clickable (Button, Link, ect.)
+  - action: The user clicks on this element abd the page view shifts to [Choose Topics Page View](#choose-topics-page-view)
 - [_User Menu_](#user-menu)
 - [_Bread Crumbs_](#bread-crumbs)
 #### 2.1.2. __Mockup__:
@@ -66,21 +62,17 @@ Otherwise he'll go through vote suggestions _specific_ to the Topics selected.
 #### 2.2.1. Specification
 ##### 2.2.1.1. __Variables__:
 - topicsSelectedList - List of all Topics selected by the user
-  - Type: List
 ##### 2.2.1.2. __Page Topics__
 - Topics list<br>
 List of the topics in the document that are up for a vote. each one can be marked with a checkbox
-  - Type: List
   - Each item in the list is the topic string label and a checkbox that if marked then the topic is added to the topicsSelectedList list.
 - <a id="proceed_to_votes">Proceed to Votes</a><br>
 A button that leads to the [New Votes Page](#new-votes-page)
-  - Type: Clickable<br>
   - If the user selected some topic (topicsSelectedList Not Empty)<br>
   then the New Votes Page will be in [__Specific Topic__](#specific-topic-mode) mode.
   - If the user did not select any topic (topicSelectedList Empty)<br>
     then the New Votes Page will be in [__All Topics__](#all-topics-mode) mode.
 - Mark All Checkbox
-  - type: Checkbox
 - [_User Menu_](#user-menu)
 - [_Bread Crumbs_](#bread-crumbs)
 #### 2.2.2. __Mockups__:

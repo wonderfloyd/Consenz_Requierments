@@ -6,8 +6,8 @@ Other sources in this repository contain other needed information such as the da
 # 1. <a id="project-overview">Project Overview</a>
 - [Project Overview](./project_overview.md/#project-overview)
 - [Definitions](./project_overview.md/#definitions)
-- [Technologies Overview](./project_overview.md/#technologies-overview)
 - [Project State](./project_overview.md/#project-state)
+- [Technologies Overview](./project_overview.md/#technologies-overview)
 - [Data Model](./data_model.md)
 
 # 2. <a id="workflow">Workflow</a>
