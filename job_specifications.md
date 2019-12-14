@@ -1,63 +1,16 @@
 # <a id="top"></a>Consenz new Flows specifications
 
-- [Project Overview](#project-overview)
-  - [Sitemap](#sitemap)
-- [Definitions](#definitions)
+- [Project State](#project-state)
 - [Pages](#pages-description)
   - [Entering Page View](#entering-page-view)
   - [Choose Topics Page View](#choose-topics-page-view)
   - [New Votes Page](#new-votes-page)
   - [Summary Page](#summary-page)
-- [Technologies Overview](#technologies-overview)
-- [Project State](#project-state)
 - [Installation Guide](#installation-guide)
 - [Workflow](#workflow)
-
-## 1. <a id="project-overview"></a>Project Overview
-A platform for creating agreements.<br>
-The platform lets a group of people create a document that reflects an issue they agree upon and discuss the issues that are in disagreement.<br>
-The platform allows any group of people at any scale to formulate a text in a single, coherent and clear document in a transparent and democratic way.<br>
-The platform enable it through a new kind of Internet discussion.<br>
-Instead of spreading across countless responses,<br>
-the discussion converges around a collaborative and democratic document by incorporating voting mechanisms with discussion tools.<br>
-This allows to distinguish between agreed upon and controversial issues,<br>
-and the process has a clear product:<br>
-A text that reflects the consent of the participants.
-
-### 1.1. <a id="sitemap"></a>Sitemap
-                     Sitemap MISSING!
-
-
-## 2. <a id="definitions">Definitions</a>
-Here you'll find terms and definitions for the app's structure and components.
-- <a id="document_definition">__Document__</a>: An object that covers all the relevant issues that the users have discussed, voted and agreed upon.<br>
-The Document is dynamic and change according to the actions of the users.
-- __Topic__: Sub part of the document.<br>
-a document may have multiple Topics.
-- __Section__: One issue in the Topic.<br>
-a Topic may have multiple Sections.
-- __Sub-Section__: Sub part of a Section.<br>
-Sections may have multiple Sub-Sections.
-- __Version__: Old stats of the Document.<br>
-A Document may have multiple Versions.
-- __Draft__: A state of a Document in a given time, i.e . the most updated Version of the Document.<br>
-A Document can have only one draft.
-- __Suggestion__: A Section which is still in discussion and stand for a vote and discussion
-- __Edit Suggestion__: A Suggestion that stands to replace another Section.<br>
-A Section may have multiple Edit Suggestions.
-- __Argument__: A statement regards a Suggestion.<br>
-An Argument can be either pro (for) or con (against) a Suggestion.<br>
-A Suggestion may have multiple Arguments
-- __Comment__: A note that represent an opinion of a user regarding an Argument.<br>
-an Argument may have multiple Comments
-- __Discussion__: The sum of all Arguments and Comments regards a Suggestion.
-- __Vote__: A way for the users to express support or objection to a Suggestion without adding text.<br>
-A Vote can be pro or con.<br>
-A Suggestion may have multiple Votes.
-- __User__: A member in the platform that may create a Section, vote in discussion, comment on an argument. ect
-- __Discussion Process__: The purposes and intentions of the initiator(s) of the process<br>
-that include the issues that stand for discussion and the goals that the created document should fulfill.
-
+  
+## 5. <a id="project-state"></a>Project State
+This is a working application, and this assignment is meant to add a few new views described in [Pages](#pages-description). In production the application is connected to Firebase and Firestore for authentication and DB. In order to work on this assignment the app was decoupled from Firebase and is now a client side stand alone working with mock data that is inside the source code directory (i.e `/database`). 
 ## 3. <a id="pages-descriptions">Pages</a>
 This section contains the details and mock ups of the different pages that have to be developed
 
@@ -76,7 +29,7 @@ __Topics__:
     - to: [Choose Topics Page View](#choose-topics-page-view)
     - trigger: The user clicks on this element
     - feedback: Page view shifts to Choose Topics Page View
-- _User Menu_ [here](./components.md/#user-menu)
+- [_User Menu_](./components.md/#user-menu)
 - _Bread Crumbs_
 
 
@@ -226,29 +179,16 @@ __Topics__:
 __Mock Up__:
 
 ![summary_page_mockup](https://user-images.githubusercontent.com/42510547/70627790-8219f000-1c2f-11ea-8b98-862679decad7.png)
-
-
-## 4. <a id="technologies-overview"></a>Technologies Overview:
-- Vue
-- Vue - TypesScript
-- VueX
-- VueX - TypesScript
-- Vuetify
-  
-## 5. <a id="project-state"></a>Project State
-This is a working application, and this assignment is meant to add a few new views described in [Pages](#pages-description). In production the application is connected to Firebase and Firestore for authentication and DB. In order to work on this assignment the app was decoupled from Firebase and is now a client side stand alone working with mock data that is inside the source code directory (i.e `/database`). 
-
-
-## 6. <a id="installation-guide"></a>Installation Guide
-- Clone your private repository
-- npm install
-- npm run serve
-
 ## 7. <a id="workflow"></a>Workflow  
 In this repository you'll find all the information needed to get the job done.  
 This file includes an overview of the project and the specifications of the new page views to be developed. Other files in this repository contains the rest of the information you need such as the data model, algorithms and the app's structure and component's heirarchy.  
 Beside this repository you should get a link to a private repository containing the app's source code. You'll be the only one working on that fork of the repository, and it'll be merged into the original repository when the job is done.  
 Please make sure to make commits regularly and push them to the repository for review.  
+
+## 6. <a id="installation-guide"></a>Installation Guide
+- Clone your private repository
+- npm install
+- npm run serve
 
 [Back to top](#top)
 ***
