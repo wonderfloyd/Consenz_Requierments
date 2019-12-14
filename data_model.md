@@ -5,7 +5,7 @@ This is the Applications Data Model. It consist of four objects:
 - [Section](#section)
 - [Argument](#argument)
 
-### <a id="user"></a>User:
+## <a id="user">User</a>
 - displayName: String
 - created_at: Date
 - documents:
@@ -14,7 +14,7 @@ This is the Applications Data Model. It consist of four objects:
   - isOn: Boolean
   - mailAddress: String
 - photoURL: String
-### <a id="document"></a>Document:
+## <a id="document">Document</a>
 - about: String
 - conditionalSupport: Boolean
 - cons:
@@ -26,7 +26,7 @@ This is the Applications Data Model. It consist of four objects:
   - Number
 - createdAt: Date
 - divisionOfTopics: Boolean
-- documentCNS_Topics:
+- documentTopics:
   - String
 - editors:
   - ref: User
@@ -38,8 +38,8 @@ This is the Applications Data Model. It consist of four objects:
 - updated_by:
   - ref: User
 - voteOnDocument: Boolean
-### <a id="section"></a>Section:
-- CNS_Topic: String
+## <a id="section">Section</a>
+- <a id="section-topic">topic</a>: String
 - content: String
 - created_by:
   - ref: User
@@ -67,11 +67,11 @@ This is the Applications Data Model. It consist of four objects:
 - timer: Number
 - tag: String
 - toDelete:
-- toEdit:
+- <a id="to-edit">toEdit</a>:
   - type: List
   - item:
   - description:
-### <a id="argument"></a>Argument:
+## <a id="argument">Argument</a>
 - content: String
   - convinced:
     - ref: User
