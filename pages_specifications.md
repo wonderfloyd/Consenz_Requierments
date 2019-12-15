@@ -9,6 +9,7 @@ The details and mock ups of the different pages that have to be developed
 - [Pages Topics](#topics)
   - [Vote Counters](#vote-counters)
   - [Vote Buttons](#vote-buttons)
+  - [Add New Edit Suggesetion Clickable](#add-new-edit-suggestion-clickable)
   - [Arguments Section](#arguments-section)
   - [Arguments Block](#arguments_block)
   - [Suggestion Navigation Buttons](#suggestion-navigation-buttons)
@@ -44,7 +45,7 @@ Explain the document issues and encourage her to sign up and participate.
 ##### 2.1.1.2. __Page Topics__
 - Welcome Text - Static text, Edited by Admin user, represents overview. May include discussion preview
 - Proceed to choose Topic Clickable (Button, Link, ect.)
-  - action: The user clicks on this element abd the page view shifts to [Choose Topics Page View](#choose-topics-page-view)
+  - action: The user clicks on this element and the page view shifts to [Choose Topics Page View](#choose-topics-page-view)
 - [_User Menu_](#user-menu)
 - [_Bread Crumbs_](#bread-crumbs)
 #### 2.1.2. __Mockup__:
@@ -117,6 +118,7 @@ If it is a Suggestion for an edit of the Section than it will also display the c
     - [Vote Counters](#vote-counters)
     - [Vote Buttons](#vote-buttons) - float buttons, will showed without considering scrolling page state
     - [Arguments Section](#arguments-section)
+    - [Add New Edit Suggestion Clickable](#Add-New-Edit-Suggestion-Clickable)
 - Topic Title (String)
 - [Suggestion Navigation Buttons](#suggestion-navigation-buttons)
 - [Get Notification](#get-notification)
@@ -248,6 +250,13 @@ a new argument for a suggestion, a new comment for a argument, a change in a sug
   - New Edit Suggestions Notification
   - New Section Suggestions Notification
   - New Argument And Comment Notification
+## 4.6. <a id="add-new-edit-suggestion-clickable">__Add New Edit Suggestion Clickable__
+A clickable that open a box for adding edit section suggestion text. After publishing the new text will be added to suggestions list.
+  - Action: User click on Add New Edit Suggestion Clickable.<br>
+    A text box and "publish" button shows. The button is grayed and not active.
+    In box the text of the section which the user visited last. The text is editable.
+    After user change the text the "publish" button will be active and colored. 
+    After clicking "publish" the text will be add as a new edit suggestion and the user will be transfer to the new suggestion vote page.
 
 # 5. <a id="logics">Logics</a>
 The logical specifications that are used in the pages flows
