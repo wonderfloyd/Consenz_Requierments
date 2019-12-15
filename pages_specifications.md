@@ -115,7 +115,7 @@ If it is a Suggestion for an edit of the Section than it will also display the c
     - Threshold (Number)
     - Timer (Countdown Clock)
     - [Vote Counters](#vote-counters)
-    - [Vote Buttons](#vote-buttons)
+    - [Vote Buttons](#vote-buttons) - float buttons, will showed without considering scrolling page state
     - [Arguments Section](#arguments-section)
 - Topic Title (String)
 - [Suggestion Navigation Buttons](#suggestion-navigation-buttons)
