@@ -62,7 +62,7 @@ This is the Applications Data Model. It consist of four objects:
 - contentHtml: String
 - deleted:
 - edited:
-- status: Number
+## <a id="status">status</a>: Number
 - threshold: Number
 - timer: Number
 - tag: String
