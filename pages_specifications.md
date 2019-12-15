@@ -55,7 +55,8 @@ Explain the document issues and encourage her to sign up and participate.
 The goal is to give the user an option to choose the topics relevant to her.<br>
 This page contains the topics list for the current [Document](./project_overview.md/#document_definition).<br>
 The list should be a multiple selection checkbox,<br>
-where the user can select either none, some, or all of the options.<br>
+where the user can select either one, some, or all of the options.<br>
+The default mode is that the option of "view all topics" is marked.
 The [Proceed to Votes](#proceed_to_votes) button leads to the [New Votes Page](#new-votes-page).<br>
 If no option is selected the user will go through _all_ of the vote Suggestions in the Document.<br>
 Otherwise he'll go through vote suggestions _specific_ to the Topics selected.  
@@ -183,7 +184,7 @@ Navigation buttons that allow the user to navigate between suggestions up for a 
 There are 2 buttons:
 ### 3.5.1. Next Suggestion Clickable
   - Comment: Starting with greyed out clickable.<br>
-    Only after user votes, he can press 'Next Suggestion' and move to the next voting section.
+    After user votes the clickable will be highlight in some graphic way, but in any time he can press 'Next Suggestion' and move to the next voting section.
   - Action: User clicks "Next Suggestion"<br>
     (New Votes Page -> Suggestion Navigation Buttons -> Next Suggestion)<br>
     The action depends on the [page mode](#page-mode): _All Topics_ or _Specific Topic_
@@ -196,19 +197,10 @@ There are 2 buttons:
       If the current shown suggestion is the last suggestion in this Topic and the Topic is the last topic in the document<br>
       than the user is transferred to the [Summary page](#summary-page).
     - End of New Suggestions: User reach the end of new suggestions page view and navigates to [Summary page](#summary-page).
-### 3.5.2. Previous Suggestion Clickable
-  - Action: User clicks "Previous Suggestion"<br>
-    (New Votes Page -> Suggestion Navigation Buttons -> Previous Suggestion)<br>
-    The action depends on the [page mode](#page-mode): _All Topics_ or _Specific Topic_
-    - All Topics: The page shows the previous suggestion according to the [Most Agreed Upon](#most-agreed-upon) sorting.<br>
-      If current shown suggestion is the first suggestion in this sorting<br>
-      then this clickable should not be active (greyed out)<br>
-    - Specific Topic: The page shows the previous suggestion according to the [Sort by Topic](#sort-by-topic) sorting.<br>
-      If current shown suggestion is the first suggestion in this Topic<br>
-      then the last suggestion in the previous Topic is shown.<br>
-      If the current shown suggestion is the first suggestion in this Topic<br>
-      and the Topic is the first topic in the document<br>
-      than this clickable should not be active (greyed out)
+### 3.5.2. Previous View Clickable
+  - Action: User clicks "Previous View"<br>
+    (New Votes Page -> Suggestion Navigation Buttons -> Previous View)<br>
+    Show the last page that the user visit.<br>
 ## 3.6. <a id="user-avatar">__User Avatar__</a><br>
 User presentation (Name and icon).<br>
 This presentation should also differ between a _regular_ user and _editor_ user.<br>
@@ -272,7 +264,7 @@ Sorting Algorithm that prefers suggestions that are closer to be accepted<br>
 I.e. There threshold is closer 0
 #### 5.2.1.1. variables:
 - suggestionsList: List of all [Suggestions](./project_overview.md/#suggestion_definition) for voting.<br>
-  The list should consist of all Data-Model [Section](./data_model.md/#section) instances with at least 1 object in the [toEdit](./data_model.md/#to-edit) field
+  The list should consist of all Data-Model [Section](./data_model.md/#section) instances which their [status] field is 0 or 4
 - x, y: Suggestion items in suggestionsList for voting
 #### 5.2.1.2. logic
 For x, y in suggestionsList: x before y if (x.pros - x.cons) > (y.pros - y.cons)
@@ -281,7 +273,7 @@ Filter of suggestions that accepts only suggestions with specific topic
 #### 5.2.2.1. <a id="specific-topic-suggestions-variables">variables</a>
 - specificTopic: String
 - topicSuggestionsList: List of all [Suggestions](./project_overview.md/#suggestion_definition) for voting that belong to the specific topic.<br>
-The list should consist of all Data-Model [Section](./data_model.md/#section) instances with at least 1 object in the [toEdit](./data_model.md/#to-edit) field and that their [topic](./data_model.md/#section-topic) field is the same as specificTopic
+The list should consist of all Data-Model [Section](./data_model.md/#section) instances which their [status] field is 0 or 4 and that their [topic](./data_model.md/#section-topic) field is the same as specificTopic
 ### 5.2.3. <a id="sort-by-topic">__Sort by Topic__</a>
 Sorting Algorithm that work only on [Suggestions](./project_overview.md/#suggestion_definition) with [specific topic](#specific-topic-suggestions)<br>
 and prefers suggestions that are closer to be accepted.
