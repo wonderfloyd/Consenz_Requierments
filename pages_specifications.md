@@ -256,7 +256,7 @@ A clickable that open a box for adding edit section suggestion text. After publi
     A text box and "publish" button shows. The button is grayed and not active.
     In box the text of the section which the user visited last. The text is editable.
     After user change the text the "publish" button will be active and colored. 
-    After clicking "publish" the text will be add as a new edit suggestion and the user will be transfer to the new suggestion vote page.
+    After clicking "publish" the text will be add as a new edit suggestion and the user will be transfered to the new suggestion vote page.
 
 # 5. <a id="logics">Logics</a>
 The logical specifications that are used in the pages flows
