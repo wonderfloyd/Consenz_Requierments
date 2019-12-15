@@ -264,7 +264,7 @@ Sorting Algorithm that prefers suggestions that are closer to be accepted<br>
 I.e. There threshold is closer 0
 #### 5.2.1.1. variables:
 - suggestionsList: List of all [Suggestions](./project_overview.md/#suggestion_definition) for voting.<br>
-  The list should consist of all Data-Model [Section](./data_model.md/#section) instances which their [status] field is 0 or 4
+  The list should consist of all Data-Model [Section](./data_model.md/#section) instances which their [status](./data_model.md/#status) field is 0 or 4
 - x, y: Suggestion items in suggestionsList for voting
 #### 5.2.1.2. logic
 For x, y in suggestionsList: x before y if (x.pros - x.cons) > (y.pros - y.cons)
@@ -273,7 +273,7 @@ Filter of suggestions that accepts only suggestions with specific topic
 #### 5.2.2.1. <a id="specific-topic-suggestions-variables">variables</a>
 - specificTopic: String
 - topicSuggestionsList: List of all [Suggestions](./project_overview.md/#suggestion_definition) for voting that belong to the specific topic.<br>
-The list should consist of all Data-Model [Section](./data_model.md/#section) instances which their [status] field is 0 or 4 and that their [topic](./data_model.md/#section-topic) field is the same as specificTopic
+The list should consist of all Data-Model [Section](./data_model.md/#section) instances which their [status](./data_model.md/#status) field is 0 or 4 and that their [topic](./data_model.md/#section-topic) field is the same as specificTopic
 ### 5.2.3. <a id="sort-by-topic">__Sort by Topic__</a>
 Sorting Algorithm that work only on [Suggestions](./project_overview.md/#suggestion_definition) with [specific topic](#specific-topic-suggestions)<br>
 and prefers suggestions that are closer to be accepted.
