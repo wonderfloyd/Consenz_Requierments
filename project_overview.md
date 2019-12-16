@@ -8,7 +8,8 @@
 
 ## 1. <a id="project-overview"></a>Project Overview
 A platform for creating agreements.<br>
-The platform lets a group of people create a document that reflects an issues they agree upon and discuss the issues that are in disagreement.<br>
+The platform lets a group of people create a document that reflects the issues they agree upon<br>
+and discuss the issues that are in disagreement.<br>
 The platform allows any group of people at any scale to formulate a text in a single, coherent and clear document in a transparent and democratic way.<br>
 The platform enable it through a new kind of Internet discussion.<br>
 Instead of spreading across countless responses,<br>

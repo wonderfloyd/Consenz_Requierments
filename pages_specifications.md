@@ -9,7 +9,7 @@ The details and mock ups of the different pages that have to be developed
 - [Pages Topics](#topics)
   - [Vote Counters](#vote-counters)
   - [Vote Buttons](#vote-buttons)
-  - [Add New Edit Suggesetion Clickable](#add-new-edit-suggestion-clickable)
+  - [Add New Edit Suggestion Widget](#add-new-edit-suggestion-clickable)
   - [Arguments Section](#arguments-section)
   - [Arguments Block](#arguments_block)
   - [Suggestion Navigation Buttons](#suggestion-navigation-buttons)
@@ -57,7 +57,7 @@ The goal is to give the user an option to choose the topics relevant to her.<br>
 This page contains the topics list for the current [Document](./project_overview.md/#document_definition).<br>
 The list should be a multiple selection checkbox,<br>
 where the user can select either one, some, or all of the options.<br>
-The default mode is that the option of "view all topics" is marked.
+The default mode is that the "view all topics" option is marked.<br>
 The [Proceed to Votes](#proceed_to_votes) button leads to the [New Votes Page](#new-votes-page).<br>
 If no option is selected the user will go through _all_ of the vote Suggestions in the Document.<br>
 Otherwise he'll go through vote suggestions _specific_ to the Topics selected.  
@@ -116,9 +116,9 @@ If it is a Suggestion for an edit of the Section than it will also display the c
     - Threshold (Number)
     - Timer (Countdown Clock)
     - [Vote Counters](#vote-counters)
-    - [Vote Buttons](#vote-buttons) - float buttons, will showed without considering scrolling page state
+    - [Vote Buttons](#vote-buttons) - (Float buttons, Shown regardless scrolling page state)
     - [Arguments Section](#arguments-section)
-    - [Add New Edit Suggestion Clickable](#Add-New-Edit-Suggestion-Clickable)
+    - [Add New Edit Suggestion Widget](#Add-New-Edit-Suggestion-Clickable)
 - Topic Title (String)
 - [Suggestion Navigation Buttons](#suggestion-navigation-buttons)
 - [Get Notification](#get-notification)
@@ -185,8 +185,9 @@ Each block is composed from 4 elements:
 Navigation buttons that allow the user to navigate between suggestions up for a vote according to the [sorting algorithm](#algorithms).<br>
 There are 2 buttons:
 ### 3.5.1. Next Suggestion Clickable
-  - Comment: Starting with greyed out clickable.<br>
-    After user votes the clickable will be highlight in some graphic way, but in any time he can press 'Next Suggestion' and move to the next voting section.
+Starting with greyed out clickable.<br>
+After user votes the clickable will be highlight in some graphic way,<br>
+but in any time he can press 'Next Suggestion' and move to the next voting section.
   - Action: User clicks "Next Suggestion"<br>
     (New Votes Page -> Suggestion Navigation Buttons -> Next Suggestion)<br>
     The action depends on the [page mode](#page-mode): _All Topics_ or _Specific Topic_
@@ -250,13 +251,15 @@ a new argument for a suggestion, a new comment for a argument, a change in a sug
   - New Edit Suggestions Notification
   - New Section Suggestions Notification
   - New Argument And Comment Notification
-## 4.6. <a id="add-new-edit-suggestion-clickable">__Add New Edit Suggestion Clickable__
-A clickable that open a box for adding edit section suggestion text. After publishing the new text will be added to suggestions list.
-  - Action: User click on Add New Edit Suggestion Clickable.<br>
-    A text box and "publish" button shows. The button is grayed and not active.
-    In box the text of the section which the user visited last. The text is editable.
-    After user change the text the "publish" button will be active and colored. 
-    After clicking "publish" the text will be add as a new edit suggestion and the user will be transfered to the new suggestion vote page.
+## 4.6. <a id="add-new-edit-suggestion-clickable">__Add New Edit Suggestion Widget__
+A clickable that opens a box for adding edit section suggestion text.<br>
+After publishing, the new text will be added to suggestions list.
+  - Action: User click on Add New Edit Suggestion Widget.<br>
+    A text box and a "Publish" grayed un-active button pop up.<br>
+    Editable text box contains the text of the section which the user visited last.<br>
+    The user can change text, then the "publish" button becomes active and colored.<br>
+    After clicking "publish" the text will be add as a New Edit Suggestion<br>
+    and the user is transferred to the [New Votes Page](#new-votes-page) presenting the new Suggestion .
 
 # 5. <a id="logics">Logics</a>
 The logical specifications that are used in the pages flows
@@ -282,7 +285,8 @@ Filter of suggestions that accepts only suggestions with specific topic
 #### 5.2.2.1. <a id="specific-topic-suggestions-variables">variables</a>
 - specificTopic: String
 - topicSuggestionsList: List of all [Suggestions](./project_overview.md/#suggestion_definition) for voting that belong to the specific topic.<br>
-The list should consist of all Data-Model [Section](./data_model.md/#section) instances which their [status](./data_model.md/#status) field is 0 or 4 and that their [topic](./data_model.md/#section-topic) field is the same as specificTopic
+The list should consist of all Data-Model [Section](./data_model.md/#section) instances<br>
+which their [status](./data_model.md/#status) field is 0 or 4 and that their [topic](./data_model.md/#section-topic) field is the same as specificTopic
 ### 5.2.3. <a id="sort-by-topic">__Sort by Topic__</a>
 Sorting Algorithm that work only on [Suggestions](./project_overview.md/#suggestion_definition) with [specific topic](#specific-topic-suggestions)<br>
 and prefers suggestions that are closer to be accepted.

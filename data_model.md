@@ -62,7 +62,9 @@ This is the Applications Data Model. It consist of four objects:
 - contentHtml: String
 - deleted:
 - edited:
-## <a id="status">status</a>: Number
+- <a id="status">status</a>:
+  - type: Number
+  - description: The voting status of the Suggestion (0,1,2,3,4 ???) 
 - threshold: Number
 - timer: Number
 - tag: String
