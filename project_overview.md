@@ -29,7 +29,7 @@ a Topic may have multiple Sections.
 Sections may have multiple Sub-Sections.
 - __Version__: Old stats of the Document.<br>
 A Document may have multiple Versions.
-- __Draft__: A state of a Document in a given time, i.e . the most updated Version of the Document.<br>
+- <a id="draft_definition">__Draft__</a>: A state of a Document in a given time, i.e . the most updated Version of the Document.<br>
 A Document can have only one draft.
 - <a id="suggestion_definition">__Suggestion__</a>: A Section which is still in discussion and stand for a vote and discussion
 - __Edit Suggestion__: A Suggestion that stands to replace another Section.<br>
