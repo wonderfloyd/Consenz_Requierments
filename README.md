@@ -30,8 +30,5 @@ Other sources in this repository contain other needed information such as the da
 # 5. Job Requirements
 - Make commits regularly and push them to the repository for review.
 - Include human friendly commit log messages explaining what the commit is for
- 
-# 6. Coding Standards 
-??
 
 Happy coding!   
