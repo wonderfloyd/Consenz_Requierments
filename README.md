@@ -25,10 +25,17 @@ Other sources in this repository contain other needed information such as the da
   - Make sure it executes [known working features](./working_features.md/#top)
 - Read the [pages specification](./pages_specifications.md/#top) for the new pages that this job requires
 - Provide a High-Level description of proposed solution
-- Negotiate Job Agreement
+- Negotiate Job Agreement<br>
+  The total price will be split to small payments that are done after finishing each page:
+    - 10% [Entering Page View](./pages_specifications.md/#entering-page-view)
+    - 15% [Choose Topics Page View](./pages_specifications.md/#choose-topics-page-view)
+    - 40% [New Votes Page](./pages_specifications.md/#new-votes-page)
+    - 35% [Summary Page](./pages_specifications.md/#summary-page)
 
 # 5. Job Requirements
 - Make commits regularly and push them to the repository for review.
 - Include human friendly commit log messages explaining what the commit is for
+
+
 
 Happy coding!   
