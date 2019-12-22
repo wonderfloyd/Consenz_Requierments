@@ -49,8 +49,10 @@ Explain the document issues and encourage her to sign up and participate.
 - [_User Menu_](#user-menu)
 - [_Bread Crumbs_](#bread-crumbs)
 #### 2.1.2. __Mockup__:
+The mockups are presented in two languages: english and hebrew
+![image](https://user-images.githubusercontent.com/12394551/71320184-873d3180-24b0-11ea-89ad-37513f589a34.png)
 ![entering_page_mockup](https://user-images.githubusercontent.com/42510547/70627786-80e8c300-1c2f-11ea-93f3-33f3a6ffe004.png)
-- This mockup is missing the User Menu and Bread Crumbs elements 
+ - This mockup is missing the User Menu and Bread Crumbs elements
 
 ### 2.2. <a id="choose-topics-page-view">Choose Topics Page View</a>
 The goal is to give the user an option to choose the topics relevant to her.<br>
@@ -80,6 +82,7 @@ A button that leads to the [New Votes Page](#new-votes-page)
 #### 2.2.2. __Mockups__:
 ##### 2.2.2.1. __Mock up 1__:  
 ![topics_list_mockup2](https://user-images.githubusercontent.com/42510547/70627781-7fb79600-1c2f-11ea-8b7b-912ab69e9484.png)
+![image](https://user-images.githubusercontent.com/12394551/71320192-9623e400-24b0-11ea-93e9-a452181eaf3c.png)
 - This mockup is missing the User Menu and Bread Crumbs elements
 ##### 2.2.2.2. __Mock up 2__:  
 ![topics_list_mockup2](https://user-images.githubusercontent.com/12394551/70518786-9c769f80-1b43-11ea-801d-035e9999adf8.png)
@@ -127,13 +130,17 @@ If it is a Suggestion for an edit of the Section than it will also display the c
 - [_User Menu_](#user-menu)
 - [_Bread Crumbs_](#bread-crumbs)
 #### 2.3.2. __Mockups__:
-#### 2.2.2.1. __Mock up 1 for New Suggestion__:  
+#### 2.3.2.1. __Mock up 1 for New Suggestion__:  
 ![new_section_vote_mockup1](https://user-images.githubusercontent.com/42510547/70627788-81815980-1c2f-11ea-970e-8a02f6a8940c.png)
-#### 2.2.2.2. __Mock Up 2 for New Suggestion__:
+![image](https://user-images.githubusercontent.com/12394551/71320193-9d4af200-24b0-11ea-8491-8f6eaa870f9a.png)
+#### 2.3.2.2. __Mock Up 2 for New Suggestion__:
 ![new_section_vote_mockup2](https://user-images.githubusercontent.com/12394551/70518785-9c769f80-1b43-11ea-9dc3-cc9796b94ddd.png)
-#### 2.2.2.3. __Mock up 1 for Editing Suggestion__:
+#### 2.3.2.3. __Mock up 1 for Editing Suggestion__:
 ![edit_section_vote_mockup1](https://user-images.githubusercontent.com/42510547/70627782-7fb79600-1c2f-11ea-9978-fcd1a7963d15.png)
-#### 2.2.2.4. __Mock Up 2 for Editing Suggestion__:
+![image](https://user-images.githubusercontent.com/12394551/71320194-9fad4c00-24b0-11ea-8b69-cbaf3ab5e675.png)
+This mockup contains 'Add new Section Suggestion' buttton
+![image](https://user-images.githubusercontent.com/12394551/71320195-a20fa600-24b0-11ea-8861-49a61ee570ac.png)
+#### 2.3.2.4. __Mock Up 2 for Editing Suggestion__:
 ![edit_section_vote_mockup2](https://user-images.githubusercontent.com/12394551/70518788-9c769f80-1b43-11ea-9de3-e8746172a0b0.png)
 
 ### 2.4. <a id="summary-page"></a>Summary Page
@@ -152,7 +159,7 @@ It gives the user feedback that she finished the task of voting,<br>
 - [_Bread Crumbs_](#bread-crumbs)
 #### 2.4.2. __Mockup__:
 ![summary_page_mockup](https://user-images.githubusercontent.com/42510547/70627790-8219f000-1c2f-11ea-8b98-862679decad7.png)
-
+![image](https://user-images.githubusercontent.com/12394551/71320197-a3d96980-24b0-11ea-9402-dbab60ab71b0.png)
 ## 3. <a id="topics">Pages Topics</a>
 Simple or Compound elements that are used in the different pages as page topics
 ## 3.1. <a id="vote-counters">__Vote Counters__</a>
