@@ -30,31 +30,35 @@ The details and mock ups of the different pages that have to be developed
     - [Specific Topic Suggestions](#specific-topic-suggestions)
     - [Sort by Topic](#sort-by-topic)
 
-## 1. <a id="notes">Notes</a>
-- The word 'Topic' confusingly appears is two different uses:
-  - A UI page high level element<br>
-  (each page is composed from a list of topics, each topic can be composed of other elements) 
-  - A Topic in the main Consenz Document<br>
-  (each section suggestion relates to a specific topic in the document discussion)
+# 1. <a id="notes">Notes</a>
+## 1.1 Topic Two Uses
+The word 'Topic' confusingly appears is two different uses:
+- A UI page high level element<br>
+(each page is composed from a list of topics, each topic can be composed of other elements) 
+- A Topic in the main Consenz Document<br>
+(each section suggestion relates to a specific topic in the document discussion)
+## 1.2 Site Language (Internationalization)
+- The current pages are coded with <b>Hebrew</b> labels hard-coded (very bad) in the vue html files
+- The labels of the new pages should come from an app-dictionary key-value file, so it would be possible to support bot English and Hebrew languages
   
-## 2. <a id="pages-descriptions">Pages</a>
-### 2.1. <a id="entering-page-view">Entering Page View</a>
+# 2. <a id="pages-descriptions">Pages</a>
+## 2.1. <a id="entering-page-view">Entering Page View</a>
 The goal of the page is to introduce the user to document (see [Document](./project_overview.md/#document_definition) definition) discussion process,<br>
 Explain the document issues and encourage her to sign up and participate.
-#### 2.1.1. Specification
-##### 2.1.1.2. __Page Topics__
+### 2.1.1. Specification
+#### 2.1.1.2. __Page Topics__
 - Welcome Text - Static text, Edited by Admin user, represents overview. May include discussion preview
 - Proceed to choose Topic Clickable (Button, Link, ect.)
   - action: The user clicks on this element and the page view shifts to [Choose Topics Page View](#choose-topics-page-view)
 - [_User Menu_](#user-menu)
 - [_Bread Crumbs_](#bread-crumbs)
-#### 2.1.2. __Mockup__:
+### 2.1.2. __Mockup__:
 The mockups are presented in two languages: english and hebrew
 ![image](https://user-images.githubusercontent.com/12394551/71320184-873d3180-24b0-11ea-89ad-37513f589a34.png)
 ![entering_page_mockup](https://user-images.githubusercontent.com/42510547/70627786-80e8c300-1c2f-11ea-93f3-33f3a6ffe004.png)
  - This mockup is missing the User Menu and Bread Crumbs elements
 
-### 2.2. <a id="choose-topics-page-view">Choose Topics Page View</a>
+## 2.2. <a id="choose-topics-page-view">Choose Topics Page View</a>
 The goal is to give the user an option to choose the topics relevant to her.<br>
 This page contains the topics list for the current [Document](./project_overview.md/#document_definition).<br>
 The list should be a multiple selection checkbox,<br>
@@ -63,10 +67,10 @@ The default mode is that the "view all topics" option is marked.<br>
 The [Proceed to Votes](#proceed_to_votes) button leads to the [New Votes Page](#new-votes-page).<br>
 If no option is selected the user will go through _all_ of the vote Suggestions in the Document.<br>
 Otherwise he'll go through vote suggestions _specific_ to the Topics selected.  
-#### 2.2.1. Specification
-##### 2.2.1.1. __Variables__:
+### 2.2.1. Specification
+#### 2.2.1.1. __Variables__:
 - topicsSelectedList - List of all Topics selected by the user
-##### 2.2.1.2. __Page Topics__
+#### 2.2.1.2. __Page Topics__
 - Topics list<br>
 List of the topics in the document that are up for a vote. each one can be marked with a checkbox
   - Each item in the list is the topic string label and a checkbox that if marked then the topic is added to the topicsSelectedList list.
@@ -79,23 +83,23 @@ A button that leads to the [New Votes Page](#new-votes-page)
 - Mark All Checkbox
 - [_User Menu_](#user-menu)
 - [_Bread Crumbs_](#bread-crumbs)
-#### 2.2.2. __Mockups__:
-##### 2.2.2.1. __Mock up 1__:  
+### 2.2.2. __Mockups__:
+#### 2.2.2.1. __Mock up 1__:  
 ![topics_list_mockup2](https://user-images.githubusercontent.com/42510547/70627781-7fb79600-1c2f-11ea-8b7b-912ab69e9484.png)
 ![image](https://user-images.githubusercontent.com/12394551/71320192-9623e400-24b0-11ea-93e9-a452181eaf3c.png)
 - This mockup is missing the User Menu and Bread Crumbs elements
-##### 2.2.2.2. __Mock up 2__:  
+#### 2.2.2.2. __Mock up 2__:  
 ![topics_list_mockup2](https://user-images.githubusercontent.com/12394551/70518786-9c769f80-1b43-11ea-801d-035e9999adf8.png)
 - This mockup contains also the User Menu and Bread Crumbs elements
-### 2.3. <a id="new-votes-page">New Votes Page</a>
+## 2.3. <a id="new-votes-page">New Votes Page</a>
 This page presents all Section Suggestions that are up for voting.<br>
 Either of New Sections or Edit Suggestions of existing sections.<br>
 One suggestion in a page view.<br>
 The Suggestions are presented to the user in two modes: [All Topics](#all-topics-mode), [Specific Topic](#specific-topic-mode).<br>
 The user can navigate between the suggestions that stand for a vote.<br>
 When the user is finished voting on all open Suggestions he's redirected to the [Summary page](#summary-page).
-#### 2.3.1. Specification
-#### 2.3.1.1. <a id="page-mode">__Modes__</a>:
+### 2.3.1. Specification
+### 2.3.1.1. <a id="page-mode">__Modes__</a>:
 1. <a id="all-topics-mode">__All Topics__</a><br>
 Navigate through __all__ of the suggestions that are up for vote.<br>
 This mode is active when the user haven't selected any topic in the previous [Choose Topics Page View](#choose-topics-page-view).<br>
@@ -103,7 +107,7 @@ In this mode the suggestions are sorted by the [Most Agreed Upon](#most-agreed-u
 2. <a id="specific-topic-mode">__Specific Topic__</a><br>
 Navigate only through suggestions __specific__ to a topic that the user have selected in the previous [Choose Topics Page View](#choose-topics-page-view).<br>
 In this mode the suggestions are filtered by the [Specific Topic Suggestions](#specific-topic-suggestions) filter and sorted by the [Sort by Topic](#sort-by-topic) algorithm.
-#### 2.3.1.2. __Page Topics__:
+### 2.3.1.2. __Page Topics__:
 - Suggestion Unit<br>
 A compound element that displays the proposal to be voted upon,
 the creator [User Avatar](#user-avatar),<br>
@@ -129,26 +133,26 @@ If it is a Suggestion for an edit of the Section than it will also display the c
 - Back Buttonm (Clickable) - Change page view back to the last view seen
 - [_User Menu_](#user-menu)
 - [_Bread Crumbs_](#bread-crumbs)
-#### 2.3.2. __Mockups__:
-#### 2.3.2.1. __Mock up 1 for New Suggestion__:  
+### 2.3.2. __Mockups__:
+### 2.3.2.1. __Mock up 1 for New Suggestion__:  
 ![new_section_vote_mockup1](https://user-images.githubusercontent.com/42510547/70627788-81815980-1c2f-11ea-970e-8a02f6a8940c.png)
 ![image](https://user-images.githubusercontent.com/12394551/71320193-9d4af200-24b0-11ea-8491-8f6eaa870f9a.png)
-#### 2.3.2.2. __Mock Up 2 for New Suggestion__:
+### 2.3.2.2. __Mock Up 2 for New Suggestion__:
 ![new_section_vote_mockup2](https://user-images.githubusercontent.com/12394551/70518785-9c769f80-1b43-11ea-9dc3-cc9796b94ddd.png)
-#### 2.3.2.3. __Mock up 1 for Editing Suggestion__:
+### 2.3.2.3. __Mock up 1 for Editing Suggestion__:
 ![edit_section_vote_mockup1](https://user-images.githubusercontent.com/42510547/70627782-7fb79600-1c2f-11ea-9978-fcd1a7963d15.png)
 ![image](https://user-images.githubusercontent.com/12394551/71320194-9fad4c00-24b0-11ea-8b69-cbaf3ab5e675.png)
 This mockup contains 'Add new Section Suggestion' buttton
 ![image](https://user-images.githubusercontent.com/12394551/71320195-a20fa600-24b0-11ea-8861-49a61ee570ac.png)
-#### 2.3.2.4. __Mock Up 2 for Editing Suggestion__:
+### 2.3.2.4. __Mock Up 2 for Editing Suggestion__:
 ![edit_section_vote_mockup2](https://user-images.githubusercontent.com/12394551/70518788-9c769f80-1b43-11ea-9de3-e8746172a0b0.png)
 
-### 2.4. <a id="summary-page"></a>Summary Page
+## 2.4. <a id="summary-page"></a>Summary Page
 This page is displayed once the user have finished voting on all Sections open for a vote.<br>
 It gives the user feedback that she finished the task of voting,<br>
  explain how she could continue participate in the process and encourage her to register for e-mail notifications for her choice.  
-#### 2.4.1. Specification
-##### 2.4.1.1. __Page Topics__
+### 2.4.1. Specification
+#### 2.4.1.1. __Page Topics__
 - End Text - Static text, Edited by Admin user
 - Notifications Panel - Displays all the notifications the user can register for:
     - [Get Notification](#get-notification) for new document versions
@@ -157,28 +161,28 @@ It gives the user feedback that she finished the task of voting,<br>
     - [Get Notification](#get-notification) for new argument and comment
 - [_User Menu_](#user-menu)
 - [_Bread Crumbs_](#bread-crumbs)
-#### 2.4.2. __Mockup__:
+### 2.4.2. __Mockup__:
 ![summary_page_mockup](https://user-images.githubusercontent.com/42510547/70627790-8219f000-1c2f-11ea-8b98-862679decad7.png)
 ![image](https://user-images.githubusercontent.com/12394551/71320197-a3d96980-24b0-11ea-9402-dbab60ab71b0.png)
-## 3. <a id="topics">Pages Topics</a>
+# 3. <a id="topics">Pages Topics</a>
 Simple or Compound elements that are used in the different pages as page topics
-## 3.1. <a id="vote-counters">__Vote Counters__</a>
+# 3.1. <a id="vote-counters">__Vote Counters__</a>
 Pro and Con Counters of current suggestion vote.<br>
 It is composed from 2 elements:
   - [Vote Counter](#vote-counter) (pro)
   - [Vote Counter](#vote-counter) (con)
-## 3.2. <a id="vote-buttons">__Vote Buttons__</a>
+# 3.2. <a id="vote-buttons">__Vote Buttons__</a>
 Pro and Con voting buttons of current suggestion.<br>
 It is composed from 2 elements:
   - [Vote Button](#vote-button) (pro)
   - [Vote Button](#vote-button) (con)
-## 3.3. <a id="arguments-section">__Arguments Section__</a><br>
+# 3.3. <a id="arguments-section">__Arguments Section__</a><br>
 3 [arguments](./project_overview.md/#argument_definition) blocks.<br>
 Each one has a different mode: _Pro_, _Con_, _Neutral_
   - [Arguments Block](#arguments_block) (pro)
   - [Arguments Block](#arguments_block) (con)
   - [Arguments Block](#arguments_block) (neutral)
-## 3.4. <a id="arguments_block">__Arguments Block__</a><br>
+# 3.4. <a id="arguments_block">__Arguments Block__</a><br>
 Each block presents all the arguments with a specific mode: _Pro_, _Con_, _Neutral_<br>
 Each block is composed from 4 elements:  
   - Argument Text
@@ -188,10 +192,10 @@ Each block is composed from 4 elements:
     - Comment Text
     - [User Avatar](#user-avatar)
     - [Timestamp](#timestamp) (published)
-## 3.5. <a id="suggestion-navigation-buttons">__Suggestion Navigation Buttons__</a><br>
+# 3.5. <a id="suggestion-navigation-buttons">__Suggestion Navigation Buttons__</a><br>
 Navigation buttons that allow the user to navigate between suggestions up for a vote according to the [sorting algorithm](#algorithms).<br>
 There are 2 buttons:
-### 3.5.1. Next Suggestion Clickable
+## 3.5.1. Next Suggestion Clickable
 Starting with greyed out clickable.<br>
 After user votes the clickable will be highlight in some graphic way,<br>
 but in any time he can press 'Next Suggestion' and move to the next voting section.
@@ -207,23 +211,23 @@ but in any time he can press 'Next Suggestion' and move to the next voting secti
       If the current shown suggestion is the last suggestion in this Topic and the Topic is the last topic in the document<br>
       than the user is transferred to the [Summary page](#summary-page).
     - End of New Suggestions: User reach the end of new suggestions page view and navigates to [Summary page](#summary-page).
-### 3.5.2. Previous View Clickable
+## 3.5.2. Previous View Clickable
   - Action: User clicks "Previous View"<br>
     (New Votes Page -> Suggestion Navigation Buttons -> Previous View)<br>
     Show the last page that the user visit.<br>
-## 3.6. <a id="user-avatar">__User Avatar__</a><br>
+# 3.6. <a id="user-avatar">__User Avatar__</a><br>
 User presentation (Name and icon).<br>
 This presentation should also differ between a _regular_ user and _editor_ user.<br>
 It is composed from 2 elements:
   - User Name - String
   - User Pic - Image
-## 3.7. <a id="user-menu">__User Menu__</a>
+# 3.7. <a id="user-menu">__User Menu__</a>
 High level User Navigation Panel composed of these items:
   - Sign Out
   - About Consenz
   - About This Document
   - Name: Go to Draft Page Clickable that directs the user to the [Draft Page]()
-## 3.8. <a id="bread-crumbs">__Bread Crumbs__</a>
+# 3.8. <a id="bread-crumbs">__Bread Crumbs__</a>
 Breadcrumbs Navigation title that shows the relation to other pages in user flow for orientation.
 
 # 4. <a id="items">Items</a>
