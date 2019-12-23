@@ -1,6 +1,9 @@
 # <a id="top">Consenz new Flows specifications</a>
 The details and mock ups of the different pages that have to be developed
 - [Notes](#notes)
+  - [Topic Two Uses](#topic-two-uses)
+  - [Site Language](#site-language)
+  - [Design and Visual](#design-and-visual)
 - [Pages](#pages-description)
   - [Entering Page View](#entering-page-view)
   - [Choose Topics Page View](#choose-topics-page-view)
@@ -31,16 +34,16 @@ The details and mock ups of the different pages that have to be developed
     - [Sort by Topic](#sort-by-topic)
 
 # 1. <a id="notes">Notes</a>
-## 1.1 Topic Two Uses
+## 1.1 <a id="topic-two-uses">Topic Two Uses</a>
 The word 'Topic' confusingly appears is two different uses:
 - A UI page high level element<br>
 (each page is composed from a list of topics, each topic can be composed of other elements) 
 - A Topic in the main Consenz Document<br>
 (each section suggestion relates to a specific topic in the document discussion)
-## 1.2 Site Language (Internationalization)
+## 1.2 <a id="site-language">Site Language (Internationalization)</a>
 - The current pages are coded with <b>Hebrew</b> labels hard-coded (very bad) in the vue html files
 - The labels of the new pages should come from an app-dictionary key-value file, so it would be possible to support bot English and Hebrew languages
-## 1.3 Design and Visual
+## 1.3 <a id="design-and-visual">Design and Visual</a>
 - The specifications and page mock-ups do not go into design details but only define the logics and general looks of the pages.
 - The freelancer has the flexability to design the pages as he sees fit, following the specification's technical requirements.
   
