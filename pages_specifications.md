@@ -40,6 +40,9 @@ The word 'Topic' confusingly appears is two different uses:
 ## 1.2 Site Language (Internationalization)
 - The current pages are coded with <b>Hebrew</b> labels hard-coded (very bad) in the vue html files
 - The labels of the new pages should come from an app-dictionary key-value file, so it would be possible to support bot English and Hebrew languages
+## 1.3 Design and Visual
+- The specifications and page mock-ups do not go into design details but only define the logics and general looks of the pages.
+- The freelancer has the flexability to design the pages as he sees fit, following the specification's technical requirements.
   
 # 2. <a id="pages-descriptions">Pages</a>
 ## 2.1. <a id="entering-page-view">Entering Page View</a>
