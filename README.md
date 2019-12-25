@@ -23,6 +23,8 @@ Other sources in this repository contain other needed information such as the da
 # 4. <a id="job-description">Job Description</a>
 - Run the application.
   - Make sure it executes [known working features](./working_features.md/#top)
+  - If you find any mismatch between expected functionality and your run, you are not supposed to fix them.<br>
+  However, please inform about any errors you find.
 - Read the [pages specification](./pages_specifications.md/#top) for the new pages that this job requires
 - Provide a High-Level description of proposed solution
 - Negotiate Job Agreement
