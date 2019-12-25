@@ -4,6 +4,7 @@ The details and mock ups of the different pages that have to be developed
   - [Topic Two Uses](#topic-two-uses)
   - [Site Language](#site-language)
   - [Design and Visual](#design-and-visual)
+  - [Admin Edited Text](#admin-edited-text)
 - [Pages](#pages-description)
   - [Entering Page View](#entering-page-view)
   - [Choose Topics Page View](#choose-topics-page-view)
@@ -42,18 +43,26 @@ The word 'Topic' confusingly appears is two different uses:
 (each section suggestion relates to a specific topic in the document discussion)
 ## 1.2 <a id="site-language">Site Language (Internationalization)</a>
 - The current pages are coded with <b>Hebrew</b> labels hard-coded (very bad) in the vue html files
-- The labels of the new pages should come from an app-dictionary key-value file, so it would be possible to support bot English and Hebrew languages
+- The labels of the new pages should come from an app-dictionary key-value file, so it would be possible to support both English and Hebrew languages.
+- The freelancer need to create only the English dictionary file that is used by the new pages.
+- In the review step of each milestone, we may change the dictionary texts<br>
+and add the Hebrew dictionary file based on the english dictionary, in order to check how it looks.<br>
+- it should be easy to configure the application to work with any dictionary.
+
 ## 1.3 <a id="design-and-visual">Design and Visual</a>
 - The specifications and page mock-ups do not go into design details but only define the logics and general looks of the pages.
 - The freelancer has the flexability to design the pages as he sees fit, following the specification's technical requirements.
-  
+## 1.4 <a id="admin-edited-text">Admin Edited Text</a>
+- some of the elements take their text from data fields that the Admin edits. (like [Welcome Text](#welcome-text))
+- There is No need to support Admin API for updating admin data.<br>
+Just edit the json mock data and start the application with the mock data containing any needed fields.  
 # 2. <a id="pages-descriptions">Pages</a>
 ## 2.1. <a id="entering-page-view">Entering Page View</a>
 The goal of the page is to introduce the user to document (see [Document](./project_overview.md/#document_definition) definition) discussion process,<br>
 Explain the document issues and encourage her to sign up and participate.
 ### 2.1.1. Specification
 #### 2.1.1.2. __Page Topics__
-- Welcome Text - Static text, Edited by Admin user, represents overview. May include discussion preview
+- <a id="welcome-text">Welcome Text</a> - Static text, Edited by Admin user, represents overview. May include discussion preview
 - Proceed to choose Topic Clickable (Button, Link, ect.)
   - action: The user clicks on this element and the page view shifts to [Choose Topics Page View](#choose-topics-page-view)
 - [_User Menu_](#user-menu)
@@ -233,6 +242,8 @@ High level User Navigation Panel composed of these items:
   - About Consenz
   - About This Document
   - Name: Go to Draft Page Clickable that directs the user to the [Draft Page]()
+
+The User Menu is already implemented in existing code. Need to integrate it also in new pages
 # 3.8. <a id="bread-crumbs">__Bread Crumbs__</a>
 Breadcrumbs Navigation title that shows the relation to other pages in user flow for orientation.
 
