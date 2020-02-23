@@ -150,7 +150,7 @@ The Action executes the existing [Vote Pro](#vote-logic) logic. **The logic code
 ![Image20200220190800](https://user-images.githubusercontent.com/12394551/74960280-b6224600-5414-11ea-9e60-018c22dd42f1.png)
 ##### <a id="vote-logic">Vote Logic</a>
 Voting Pro/Con logic is already implemented.
-see example in [here](#https://new-votes-page.netlify.com/#/document/springfield/section?sectionById=wLl23iX4gZCoQl11JqEV&index=1)
+see example in [here](https://new-votes-page.netlify.com/#/document/springfield/section?sectionById=wLl23iX4gZCoQl11JqEV&index=1)
 ![Image20200219172555](https://user-images.githubusercontent.com/12394551/74848127-0e3b4880-5340-11ea-963c-e9ac62777799.png)
 ![Image20200219173119](https://user-images.githubusercontent.com/12394551/74848141-12676600-5340-11ea-8141-b1692dab499d.png)
 #### 2.3.3.3. Vote Con Argument Text Area
