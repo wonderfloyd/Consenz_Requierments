@@ -29,11 +29,9 @@ Other sources in this repository contain other needed information such as the da
 - Provide a High-Level description of proposed solution
 - Negotiate Job Agreement
 # 5. Milestones
-The total price will be split between milestones.
-  - 10% [Entering Page View](./pages_specifications.md/#entering-page-view)
-  - 15% [Choose Topics Page View](./pages_specifications.md/#choose-topics-page-view)
-  - 40% [New Votes Page](./pages_specifications.md/#new-votes-page)
-  - 35% [Summary Page](./pages_specifications.md/#summary-page)
+The total price will be split 6 milestones.
+  - 1-5 [New Votes Page](./pages_specifications.md/#new-votes-page)
+  - 6 [Summary Page](./pages_specifications.md/#summary-page)
 
 ## 5.1 Milestone Check List
 The payment for each milestone will be done after completing this check list
