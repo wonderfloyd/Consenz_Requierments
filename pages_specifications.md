@@ -351,6 +351,11 @@ It gives the user feedback that she finished the task of voting,<br>
     - [Get Notification](#get-notification) for new edit suggestions
     - [Get Notification](#get-notification) for new section suggestions
     - [Get Notification](#get-notification) for new argument and comment
+- Go To Draft Button - Change page view to Draft page
+  - dictionary parameter: **goToDraftButton**
+    - he:	'לצפייה בטיוטת המסמך העדכנית'
+    - en:	'View Updated Draft'
+  - url: /#/document/[Document_id]/draft
 - [_User Menu_](#user-menu)
 - [_Bread Crumbs_](#bread-crumbs)
 ### 2.4.2. __Mockup__:
