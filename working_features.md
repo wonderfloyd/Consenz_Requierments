@@ -11,7 +11,7 @@ Note: appear at all pages.
 ### 0.1 Login / Sign out
 ### 0.2 Go to "About Consenz" page
 ### 0.3 Go to "About Document" page
-### 0.4 Go to "draft" page
+### 0.4 Go to ["Draft"](#draft) page
 
 ![image](https://user-images.githubusercontent.com/5900841/89282163-cee58780-d653-11ea-98ea-1f002a5485ed.png)
 
@@ -77,8 +77,7 @@ Click mark check box
 ### 4.4 Go to [Choose-topics](#Choose-Topics) button
 ### 4.5 Go to [Draft](#draft) button
 
-![image](https://user-images.githubusercontent.com/5900841/89295635-f47d8b80-d669-11ea-82f6-6747c6a7577d.png)
-
+![image](https://user-images.githubusercontent.com/5900841/89333620-e77a8f80-d69d-11ea-8ca0-16a912305488.png)
 # 5. <a id="Draft"> Draft Page</a>
 
 ## Actions:
@@ -86,7 +85,7 @@ Click mark check box
 ### 5.0 Open [Side-Menu](#Side-Menu)
 ### 5.1 Go to Topic [Vote-Pages](#Vote-Page)
 ### 5.2 If there are edit suggestion for section: Go to [Section-Edit-Suggestions](#Section-Edit-Suggestions) Page
-### 5.2 If there are not edit suggestion for section: Go to [Section-History](#Section-History) Page
+### 5.2 If there are no edit suggestion for section: Go to [Section-History](#Section-History) Page
 ### 5.3 Open [Section-Side-Menu](#Section-Side-Menu)
 ### 5.4 Go to [Choose-topics](#Choose-Topics) button
 ### 5.5 [Add New Section](#Add-New-Section) button
