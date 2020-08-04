@@ -9,7 +9,7 @@ Note: appear at all pages.
 ## Actions:
 
 ### 0.1 Login / Sign out
-### 0.2 Go to "About Counsenz" page
+### 0.2 Go to "About Consenz" page
 ### 0.3 Go to "About Document" page
 ### 0.4 Go to "draft" page
 
@@ -80,6 +80,17 @@ Click mark check box
 ![image](https://user-images.githubusercontent.com/5900841/89295635-f47d8b80-d669-11ea-82f6-6747c6a7577d.png)
 
 # 5. <a id="Draft"> Draft Page</a>
+
+## Actions:
+
+### 5.0 Open [Side-Menu](#Side-Menu)
+### 5.1 Go to Topic [Vote-Pages](#Vote-Page)
+### 5.2 If there are edit suggestion for section: Go to [Section-Edit-Suggestions](#Section-Edit-Suggestions) Page
+### 5.2 If there are not edit suggestion for section: Go to [Section-History](#Section-History) Page
+### 5.3 Open [Section-Side-Menu](#Section-Side-Menu)
+### 5.4 Go to [Choose-topics](#Choose-Topics) button
+### 5.5 [Add New Section](#Add-New-Section) button
+
 
 ![image](https://user-images.githubusercontent.com/5900841/89296165-a4eb8f80-d66a-11ea-8dac-42ab70fd3b58.png)
 
