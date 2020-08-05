@@ -62,7 +62,7 @@ Note: appear at all pages.
 #### 3.1.7.1 con voting button change color
 #### 3.1.7.2 counter on button add 1
 #### 3.1.7.3 counter on "supporters needed" add 1
-#### 3.1.7.4 ["add new edit suggestion"](#add-new-edit-suggestion) button appear
+#### 3.1.7.4 ["add new edit section suggestion"](#Add-new-edit-section-suggestion) button appear
 ![image](https://user-images.githubusercontent.com/5900841/89381065-445b6180-d701-11ea-99d0-8fce2ceab7a4.png)
 
 ## 3.2 Section Edit Suggestions Tab Mode
@@ -122,8 +122,8 @@ New comment on comment is added to list, and the page view scroll to the new com
 Click mark check box
 ### 4.4 Go to [Choose-topics](#Choose-Topics) button
 ### 4.5 Go to [Draft](#draft) button
+![image](https://user-images.githubusercontent.com/5900841/89418901-5c4ed780-d739-11ea-9f3b-cdbadb7b06da.png)
 
-![image](https://user-images.githubusercontent.com/5900841/89333620-e77a8f80-d69d-11ea-8ca0-16a912305488.png)
 # 5. <a id="Draft"> Draft Page</a>
 
 ## Actions:
