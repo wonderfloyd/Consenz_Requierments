@@ -52,18 +52,54 @@ Note: appear at all pages.
 
 ![image](https://user-images.githubusercontent.com/5900841/89295121-30fcb780-d669-11ea-9b78-ff2c1e07d5f5.png)
 
-## 3.2 Last Page Mode
+### 3.1.6 Vote pro
+#### 3.1.6.1 pro voting button change color
+#### 3.1.6.2 counter on button add 1
+#### 3.1.6.3 counter on "supporters needed" reduce 1:
+![image](https://user-images.githubusercontent.com/5900841/89380818-dd3dad00-d700-11ea-9691-c417f9978eb6.png)
+
+### 3.1.7 Vote con
+#### 3.1.7.1 con voting button change color
+#### 3.1.7.2 counter on button add 1
+#### 3.1.7.3 counter on "supporters needed" add 1
+#### 3.1.7.4 "add new edit suggestion" button appear
+![image](https://user-images.githubusercontent.com/5900841/89381065-445b6180-d701-11ea-99d0-8fce2ceab7a4.png)
+
+## 3.2 Section Edit Suggestions Tab Mode
+## Actions
+### 3.2.1 Click on Edit Section Suggestions Tab
+Display edit section suggestions list
+### 3.2.2 "Show Changes" switch
+True by default, after click cancel diff view of text
+### 3.2.3 Show Comments list
+
+![image](https://user-images.githubusercontent.com/5900841/89383369-052f0f80-d705-11ea-9fc0-75f9fbd0409d.png)
+
+## 3.3 Add Comments Mode
+## Actions
+### 3.3.1 Add new comment button
+Comment text box is open
+### 3.3.2 Insert comment content
+### 3.3.3 Click "publish" button
+New comment is added to list, and the page view scroll to the new comment
+
+![image](https://user-images.githubusercontent.com/5900841/89383719-a74ef780-d705-11ea-8b61-bb959c0ff5b7.png)
+
+### 3.3.4 Add new comment on comment button
+### 3.3.5 Insert comment on comment content
+### 3.3.6 Click "publish" button
+New comment on comment is added to list, and the page view scroll to the new comment on comment
+
+![image](https://user-images.githubusercontent.com/5900841/89384338-a23e7800-d706-11ea-9f37-f5ae641a950c.png)
+
+## 3.4 Last Page Mode
 
 ## Actions:
 
-### 3.2.1 [Add New Section](#Add-New-Section) Button
-### 3.2.1 Go to [Summary](#Summary) Page
+### 3.4.1 [Add New Section](#Add-New-Section) Button
+### 3.4.1 Go to [Summary](#Summary) Page
 
 ![image](https://user-images.githubusercontent.com/5900841/89295077-1aeef700-d669-11ea-8d44-f3a64b67e084.png)
-
-## 3.3 Section Edit Suggestions Tab Mode
-
-## 3.4 Add Commens Mode
 
 # 4. <a id="Summary-Page"> Summary page</a>
 
