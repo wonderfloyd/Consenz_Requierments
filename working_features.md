@@ -62,7 +62,7 @@ Note: appear at all pages.
 #### 3.1.7.1 con voting button change color
 #### 3.1.7.2 counter on button add 1
 #### 3.1.7.3 counter on "supporters needed" add 1
-#### 3.1.7.4 "add new edit suggestion" button appear
+#### 3.1.7.4 ["add new edit suggestion"](#add-new-edit-suggestion) button appear
 ![image](https://user-images.githubusercontent.com/5900841/89381065-445b6180-d701-11ea-99d0-8fce2ceab7a4.png)
 
 ## 3.2 Section Edit Suggestions Tab Mode
@@ -74,6 +74,16 @@ True by default, after click cancel diff view of text
 ### 3.2.3 Show Comments list
 
 ![image](https://user-images.githubusercontent.com/5900841/89383369-052f0f80-d705-11ea-9fc0-75f9fbd0409d.png)
+
+### 3.2.4 <a id="Add-new-edit-section-suggestion"> Add new edit section suggestion</a> button
+### 3.2.5 Insert section content
+### 3.2.6 Click Publish
+A new section will be added, and the new section page should be loaded.
+In data model, the section.parentSection field should get sectionId of the section which the user visit when publish the new edit section.
+In parens section counter on edit section suggestions tab will add 1.
+Also the new section ID should add to section.toEdit field of the parent section.
+
+![image](https://user-images.githubusercontent.com/5900841/89394244-817d1f00-d714-11ea-8bfa-c30195664ca7.png)
 
 ## 3.3 Add Comments Mode
 ## Actions
@@ -88,9 +98,9 @@ New comment is added to list, and the page view scroll to the new comment
 ### 3.3.4 Add new comment on comment button
 ### 3.3.5 Insert comment on comment content
 ### 3.3.6 Click "publish" button
-New comment on comment is added to list, and the page view scroll to the new comment on comment
+New comment on comment is added to list, and the page view scroll to the new comment on comment.
 
-![image](https://user-images.githubusercontent.com/5900841/89384338-a23e7800-d706-11ea-9f37-f5ae641a950c.png)
+![image](https://user-images.githubusercontent.com/5900841/89393315-4f1ef200-d713-11ea-8bbc-7e713cdcb001.png)
 
 ## 3.4 Last Page Mode
 
