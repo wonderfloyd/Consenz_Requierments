@@ -108,6 +108,7 @@ A new section will be added, and the new section page should be loaded.
 In data model, the section.parentSection field should get sectionId of the section which the user visit when publish the new edit section.
 In parent section counter, edit section suggestions tab will add 1.
 Also the new section ID should add to section.toEdit field of the parent section.
+(Note: All publish buttons (for a new comment, comment on comment and sections) are greyd and in-active as long as text box is empty. Only after user insert text publish button became active)
 
 ![image](https://user-images.githubusercontent.com/5900841/89524015-7c8b9e80-d7ec-11ea-8d4d-cd78e2521588.png)
 
