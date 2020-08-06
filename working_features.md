@@ -34,15 +34,13 @@ restore password window:
 
 ![image](https://user-images.githubusercontent.com/5900841/89527901-ca0b0a00-d7f2-11ea-840c-ecaca781ee8c.png)
 
-![image](https://user-images.githubusercontent.com/5900841/89282163-cee58780-d653-11ea-98ea-1f002a5485ed.png)
-
 # 1. <a id="welcome">Welcome page</a>
 
 ## Actions:
 
 ### 1.0 Open [Side-Menu](#Side-Menu)
 ### 1.1 Go to [Draft](#draft) button
-### 1.2 Go to [Choose-Topics button](#Choose-Topics)
+### 1.2 Go to [Choose-Topics](#Choose-Topics) button
 
 ![image](https://user-images.githubusercontent.com/5900841/89281968-8201b100-d653-11ea-86aa-299d96d4eb2d.png)
 
