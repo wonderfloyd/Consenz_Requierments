@@ -128,7 +128,7 @@ New comment should be added to comments list, and the page view scroll to the ne
 ### 3.3.6 Click "publish" button
 New comment on comment is added to list, and the page view scroll to the new comment on comment.
 
-![image](https://user-images.githubusercontent.com/5900841/89393315-4f1ef200-d713-11ea-8bbc-7e713cdcb001.png)
+![image](https://user-images.githubusercontent.com/5900841/89530665-91216400-d7f7-11ea-994c-23dac67eb968.png)
 
 ## 3.4 Last Page Mode
 
