@@ -1,54 +1,25 @@
-# Consenz User Flow Requirements
-Information for developing new page views for the Consenz platform.<br>
-It includes an overview of the project and the specifications of the new page views to be developed.<br>
-Other sources in this repository contain other needed information such as the data model, algorithms and the application structure and hierarchy.  
-  
-# 1. <a id="project-overview">Project Overview</a>
-- [Project Overview](./project_overview.md/#project-overview)
-- [Definitions](./project_overview.md/#definitions)
-- [Project State](./project_overview.md/#project-state)
-- [Technologies Overview](./project_overview.md/#technologies-overview)
-- [Data Model](./data_model.md)
+- [Set Up](#set-up)
+- [Introduction](#introduction)
 
-# 2. <a id="workflow">Workflow</a>
-## 2.1. Clone the Job Code Repository
-- Provide 1-2 github user names
-- Receive invitation for a private repository containing the application source code.
-- clone the source code repo.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6b374cb-4167-46de-8a23-9112b20b8d1d/deploy-status)](https://app.netlify.com/sites/consenz-te0/deploys)
+# 1. <a id="set-up">Set Up</a>
+## 1.1. Install
+npm install
+## 1.2. Start server
+npm run serve
+- Starts Server on firebase mode - Get the model data from Firebase
+- .env.firebase should have firebase application configuration
+## 1.3. Start server in mockdata mode
+npm run serve:mockdata
+- Starts Server on firebase mode - Get the model data from Firebase
+- .env.mockdata should have mockdata configuration.
+## 1.4. Test functionality
+Make sure it executes [known working features](https://github.com/wonderfloyd/Consenz_Requierments/blob/master/working_features.md/#top)
 
-# 3. Application Installation
-- npm install
-- npm run serve
+# 2. <a id="introduction">Introduction</a>
+## 2.1. Project Overview
+- [Project Overview](./documentation/README.md#top)
+## 2.2. <a id="live-demo">Live Demo</a>
+[consenz-te0.netlify.app](https://consenz-te0.netlify.app)
+- The te0 demo is working with mock data
 
-# 4. <a id="job-description">Job Description</a>
-- Run the application.
-  - Make sure it executes [known working features](https://github.com/wonderfloyd/Consenz_Requierments/blob/master/working_features.md/#top)
-  - If you find any mismatch between expected functionality and your run, you are not supposed to fix them.<br>
-  However, please inform about any errors you find.
-- Read the [pages specification](./pages_specifications.md/#top) for the new pages that this job requires
-- Provide a High-Level description of proposed solution
-- Negotiate Job Agreement
-# 5. Milestones
-The total price will be split 6 milestones.
-  - 1-5 [New Votes Page](./pages_specifications.md/#new-votes-page)
-  - 6 [Summary Page](./pages_specifications.md/#summary-page)
-
-## 5.1 Milestone Check List
-The payment for each milestone will be done after completing this check list
-1. The freelancer finished preparing the milestone page and logic<br>
-and pushed the code to the project github repository
-    - The code must be documented with inline docs on the different methods
-2. The solution will be reviewed on the following:
-    - The page logic is according to specification
-    - The page UX (style, responsiveness, ect) is professional
-    - The code is efficient and easy to understand 
-3. The freelancer will fix any issue that rose from reviewing the milestone work.
-    - New issues will be opened as issues on the github project issues tab
-4. The freelancer will provide an overview document of how the solution is technically built<br>
-(Textual explanations that include class names, methods, logics, ect.)
-
-# 6 Other Requirements
-- Make commits regularly and push them to the repository for review.
-- Include human friendly commit log messages explaining what the commit is for
-
-Happy coding!   
