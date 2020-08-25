@@ -1,5 +1,6 @@
 
 # 1. Job Requirements
+- Name: Testing system for Vue application and more features
 ## 1.1. Writing Tests
 E2E Tests that Simulate a user browsing the application, voting, commenting and doing any operation.
 - The Freelancer should suggest a solution for E2E infrastructure that supports:
