@@ -14,7 +14,7 @@ npm run serve:mockdata
 - Starts Server on firebase mode - Get the model data from Firebase
 - .env.mockdata should have mockdata configuration.
 ## 1.4. Test functionality
-Make sure it executes [known working features](https://github.com/wonderfloyd/Consenz_Requierments/blob/master/working_features.md/#top)
+Make sure it executes [known working features](https://github.com/wonderfloyd/Consenz_Requierments/blob/master/documentation/RestrictedDocument/working_features.md)
 
 # 2. <a id="introduction">Introduction</a>
 ## 2.1. Project Overview

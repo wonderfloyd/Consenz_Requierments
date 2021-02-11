@@ -2,7 +2,7 @@
 # <a id="top">Working Features</a>
 Exiting Features, should work as described, straight after installation.
 
-# 0.1 <a id="Side-Menu">Side-Menu</a>
+# 0.1 <a id="side-menu">Side-Menu</a>
 
 Note: appear at all pages.
 
@@ -38,7 +38,7 @@ restore password window:
 
 ## Actions:
 
-### 1.0 Open [Side-Menu](#Side-Menu)
+### 1.0 Open [Side-Menu](#side-menu)
 ### 1.1 Go to [Draft](#draft) button
 ### 1.2 Go to [Choose-Topics](#Choose-Topics) button
 
@@ -48,7 +48,7 @@ restore password window:
 
 ## Actions:
 
-### 2.0 Open [Side-Menu](#Side-Menu)
+### 2.0 Open [Side-Menu](#side-menu)
 ### 2.1 Breadcrumbs - go to [Welcome](#welcome) page
 ### 2.2 Breadcrumbs - go to [Draft](#draft) page
 ### 2.3 Go to Topic [Vote-Pages](#Vote-Page)
@@ -58,11 +58,11 @@ restore password window:
 
 # 3. <a id="Vote-Page"> Vote page</a>
 
-## 3.1 <a id="Vote-Page-Default-Mode">Default Mode</a>
+## 3.1 <a id="vote-page-default-mode">Default Mode</a>
 
 ## Actions:
 
-### 3.1.0 Open [Side-Menu](#Side-Menu)
+### 3.1.0 Open [Side-Menu](#side-menu)
 ### 3.1.1 Breadcrumbs - go to [Welcome](#welcome) page
 ### 3.1.2 Breadcrumbs - go to [Choose-topics](#Choose-Topics) page
 ### 3.1.3 Breadcrumbs - go to [Draft](#draft) page
@@ -112,7 +112,7 @@ Also the new section ID should add to section.toEdit field of the parent section
 
 ![image](https://user-images.githubusercontent.com/5900841/89524015-7c8b9e80-d7ec-11ea-8d4d-cd78e2521588.png)
 
-## 3.3 <a id="Add-Comments-Mode"> Add Comments Mode </a>
+## 3.3 <a id="add_comments_mode"> Add Comments Mode </a>
 ## Actions
 ### 3.3.1 Add new comment button
 Comment text box sould open
@@ -129,20 +129,20 @@ New comment on comment is added to list, and the page view scroll to the new com
 
 ![image](https://user-images.githubusercontent.com/5900841/89530665-91216400-d7f7-11ea-994c-23dac67eb968.png)
 
-## 3.4 <a id="Last-Page-Mode">Last Page Mode</a>
+## 3.4 <a id="last_page_mode">Last Page Mode</a>
 
 ## Actions:
 
-### 3.4.1 [Add New Section](#Add-New-Section) Button
+### 3.4.1 [Add New Section](#add-new-section) Button
 ### 3.4.1 Go to [Summary](#Summary) Page
 
 ![image](https://user-images.githubusercontent.com/5900841/89295077-1aeef700-d669-11ea-8d44-f3a64b67e084.png)
 
-# 4. <a id="Summary-Page"> Summary page</a>
+# 4. <a id="summary-page"> Summary page</a>
 
 ## Actions:
 
-### 4.0 Open [Side-Menu](#Side-Menu)
+### 4.0 Open [Side-Menu](#side-menu)
 ### 4.1 Breadcrumbs - go to [Welcome](#welcome) page
 ### 4.2 Breadcrumbs - go to [Draft](#draft) page
 ### 4.3 Notifications Check Box - 
@@ -151,29 +151,29 @@ Click mark check box
 ### 4.5 Go to [Draft](#draft) button
 ![image](https://user-images.githubusercontent.com/5900841/89418901-5c4ed780-d739-11ea-9f3b-cdbadb7b06da.png)
 
-# 5. <a id="Draft"> Draft Page</a>
+# 5. <a id="draft"> Draft Page</a>
 
 ## Actions:
 
-### 5.0 Open [Side-Menu](#Side-Menu)
+### 5.0 Open [Side-Menu](#side-menu)
 ### 5.1 Go to Topic [Vote-Pages](#Vote-Page)
-### 5.2 If there are edit suggestion for section: Go to [Section-Edit-Suggestions](#Section-Edit-Suggestions) Page
+### 5.2 If there are edit suggestion for section: Go to [Section-Edit-Suggestions](#section_edit_suggestions) Page
 ### 5.2 If there are no edit suggestion for section: Go to [Section-History](#Section-History) Page
 ### 5.3 Open [Section-Side-Menu](#Section-Side-Menu)
-#### 5.3.1 Go to [Section-Edit-Suggestions](#Section-Edit-Suggestions) Page
+#### 5.3.1 Go to [Section-Edit-Suggestions](#section_edit_suggestions) Page
 #### 5.3.2 Go to [Section-History](#Section-History) Page
 #### 5.3.3 Go to ["Add new edit section suggestion"](#Add-new-edit-section-suggestion) Page
 
 ![image](https://user-images.githubusercontent.com/5900841/89530209-cda09000-d7f6-11ea-9d40-ab0f8d2f236d.png)
 
 ### 5.4 Go to [Choose-topics](#Choose-Topics) button
-### 5.5 [Add New Section](#Add-New-Section) button
+### 5.5 [Add New Section](#add-new-section) button
 ### 5.6 Vote on document buttons
 After click vote pro/con on document, change button color and counter should add 1. If click again, counter reduce 1. If click pro/con and then click con/pro, first button should reduce 1 and second button should add 1
 
 ![image](https://user-images.githubusercontent.com/5900841/89529538-97aedc00-d7f5-11ea-9b29-70a62de0277d.png)
 
-# 6. <a id="Section-Edit-Suggestions"> Section Edit Suggestions Page</a>.
+# 6. <a id="section_edit_suggestions"> Section Edit Suggestions Page</a>.
 
 ## Actions:
 
@@ -183,7 +183,7 @@ After click vote pro/con on document, change button color and counter should add
 
 ![image](https://user-images.githubusercontent.com/5900841/89528397-a1374480-d7f3-11ea-995f-0f9d0ae504a5.png)
 
-# 7. <a id="Add-New-Section"> Add New Section Suggestion Page </a>
+# 7. <a id="add-new-section"> Add New Section Suggestion Page </a>
 ## 7.1 Choose section topic dropdown
 ## 7.2 Insert section content text box
 ## 7.3 Publish button
@@ -191,7 +191,7 @@ After publish load new section vote page
 
 ![image](https://user-images.githubusercontent.com/5900841/89528937-8dd8a900-d7f4-11ea-8036-6912b74497c8.png)
 
-# 8. <a id="History-Page"> Section History Page </a>
+# 8. <a id="history-page"> Section History Page </a>
 ## 8.1 [Vote pro/con](#Vote-pro)
 ## 8.2 [Add New Comment](#Add-Comments-Mode) button
 ## 8.2 [Add new edit section suggestion](#Add-new-edit-section-suggestion) button

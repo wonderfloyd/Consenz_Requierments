@@ -8,14 +8,21 @@ This is the Applications Data Model. It consist of four objects:
 - [ChangeEvent](#changeEvent)
 
 ## <a id="user">User</a>
-| Field |  | Type | Description | 
-| --- | --- | :--- | :--- |  
-| displayName | | String
-| created_at | | Date
-| documents | | List (Documents) | all the documents that the user assign to
-| notifications | isOn |  Boolean | determine if mail notifications will be sent to he user<br> (will be on "false" if user unsubscribed)
-| | mailAddress | String | email address of the user,<br>for sending notifications and for identification in log in.
-| photoURL | | String | URL link to profile photo of user
+| Field |  |  |  | Type | Description | 
+| --- | --- | --- | --- | :--- | :--- |  
+| displayName | | | | String
+| created_at | | | | Date
+| documents | | | | List (Documents) | all the documents that the user assign to
+| notifications | isOn | | | Boolean | determine if mail notifications will be sent to he user<br> (will be on "false" if user unsubscribed)
+| | mailAddress | | | String | email address of the user,<br>for sending notifications and for identification in log in.
+| | mailNotificationFrequency | | | String | Frequency of mail notifications. Should be one of `event`, `daily`, `weekly`, `never` |
+| | lastNotificationsTime | | | Date | The last time the current user watched the notifications page
+| | msgRegistrationToken | | | String | Messaging token for push notifications |
+| | documents | [documentId] |  newArgumentOrCommentNotification | Boolean | Notify the user on new arguments and comments for the document |
+| | | | newDocumentVersionNotification | Boolean | Notify the user on new version of the document|
+| | | | newEditSuggestionNotification | Boolean | Notify the user on new edit suggestion for the document |
+| | | | newSectionSuggestionNotification | Boolean | Notify the user on a new suggestion for a section for the document |
+| photoURL | | | | String | URL link to profile photo of user
 ## <a id="document">Document</a>
 | Field | Type | Description | 
 | --- | :--- | :--- |  
@@ -36,7 +43,9 @@ This is the Applications Data Model. It consist of four objects:
 | updated_at | Date
 | updated_by | List (Users)
 | voteOnDocument | Boolean | A way for users to vote pro or con the current document draft as a general,<br> without voting for a specific suggestion.
+| <a id="document_hidevoteevents">hideVoteEvents</a> | Boolean | If true then in Event Activity Page don't show voting events items
 | allowedUsers | List (Users) | If exists, only users in the list are allowed to get access to document data
+| mainThemeColor | String | Optional. A color hex code to serve as main color for all views in the document. Defaults to purple (`#69378e`).
 ## <a id="section">Section</a>
 | Field | Type | Description | 
 | --- | :--- | :--- |  

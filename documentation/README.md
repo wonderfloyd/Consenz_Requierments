@@ -66,8 +66,8 @@ that include the issues that stand for discussion and the goals that the created
 - [Most Agreed Upon](./logics.md#most-agreed-upon)
 - [User Connected Rule](./logics.md#user-connected-rule)
 # <a id="features">Features</a>
-- [Voting Page](./VotingPage/pages_specifications.md)
+- [Voting Page](VotingPage/README.md)
 # <a id="road-map">Road Map</a>
-- [Users List](./DocumentUsersList/features_specifications.md)
-- [Navigation Tree](./NavigationTree/features_specifications.md)
-- [Update Bell and Notifications](./UpdateBelll/features_specifications.md)
+- [Users List](DocumentUsersList/README.md)
+- [Navigation Tree](NavigationTree/README.md)
+- [Update Bell and Notifications](UpdateBell/README.md)
